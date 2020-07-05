@@ -1,0 +1,127 @@
+//estilos para mobile iphone 5 320*568
+@media screen and (max-width:649px){
+    header{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap; 
+        align-items: center;  
+        width:100%;
+        height:0.8%;
+        margin-bottom: 0.5%;
+    
+        .logo{
+            margin:10px 16px;
+            img{
+                width:24px;
+                height: 24px;
+            }
+        }
+        .menu{
+            margin:10px 16px;
+    
+            input[type="checkbox"] {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                opacity: 0;
+                z-index: 10;
+
+                &:checked ~ ul{
+                    opacity: 1;
+                    height: 162px;
+
+                }
+    
+    
+            }
+            
+            span{
+                width: 20px;
+                height:2px;
+                background-color: #000000;
+                display:block;
+                margin-top: 4px;
+            }
+            ul{
+                position: absolute;
+                opacity: 0;
+                top: 8.8%;
+                width: 100%;
+                left: 0 ;
+                display: flex;
+                flex-direction: column;
+                background-color: #0000EC;
+                z-index: 10;
+                height: 0;
+            }
+
+            li {
+                font-family:$fontps;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: 28px;
+                padding-left: 16px;
+                padding-bottom: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            li:hover{
+                 color: #00F3BB;
+            }    
+        }   
+    }
+}
+
+
+
+/* Estilos para Desktop 1366*352*/
+ @media screen and (min-width:650px){
+    header{
+        
+        height: 80px;
+        margin-bottom: 120px;
+
+        display: flex;
+        justify-content:space-between; 
+        align-items: center;  
+        
+        .logo{
+            margin-left: 100px;
+            margin-top: 22px;
+          img{
+            width: 36px;
+            height: 36px;
+          }
+        }
+        input[type=checkbox]{
+            display:none;
+         }
+
+        .menu{
+            margin-right: 100px;
+        }
+
+         .menu ul {
+             display: flex;
+            
+        }
+        .menu li {
+            padding-left: 48px;
+            list-style: none;
+            font-family: $fontps;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+        .menu a{
+            text-decoration: none;
+            color:#060A24;
+        }
+        a:hover{
+            color: #00F3BB;
+       }
+    }
+}
